@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-SemiBold.woff2) format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@theme {
+  --font-poppins: "Poppins";
+  --color-primary: #bd351f;
+  --color-beige: #e6d2b5;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth scroll-p-16;
+  }
+  body {
+    @apply overflow-x-hidden font-poppins text-black/80 text-base bg-white;
+  }
+  .container {
+    @apply max-w-7xl w-full mx-auto px-4;
+  }
+  h1 {
+    @apply text-[clamp(3rem,5vw,4rem)] font-bold;
+  }
+  h2 {
+    @apply text-[clamp(2rem,5vw,3rem)] font-bold;
+  }
+  h3 {
+    @apply text-[clamp(2rem,4vw,3rem)] font-bold;
+  }
+  h4 {
+    @apply text-[clamp(1.5rem,3vw,2rem)] font-bold;
+  }
+  h5 {
+    @apply text-xl font-semibold;
+  }
+  h6 {
+    @apply text-lg font-semibold;
+  }
+}
+
+@layer components {
+  header {
+    @apply bg-white;
+  }
+  .headerNav {
+    @apply ml-auto;
+  }
+  .headerNav ul {
+    @apply hidden flex-col gap-5 font-medium 
+  absolute top-full left-0 w-full bg-white p-5 shadow-md
+   lg:relative lg:flex lg:flex-row lg:items-center lg:gap-8 lg:shadow-none lg:p-0;
+  }
+  .headerNav ul.active {
+    @apply flex;
+  }
+  .toggleMenu {
+    @apply flex flex-col gap-1 lg:hidden;
+  }
+
+  .toggleMenu .line {
+    @apply block h-1 bg-primary rounded-full transition-all duration-500;
+  }
+
+  .line1 {
+    @apply w-8;
+  }
+
+  .line2 {
+    @apply w-5;
+  }
+
+  .toggleMenu.active .line2 {
+    @apply w-8;
+  }
+  .toggleMenu.active .line1 {
+    @apply w-5;
+  }
+
+  .header_wrapper {
+    @apply pt-3 pb-2 px-4 bg-white;
+  }
+  .banner {
+    @apply bg-beige py-0;
+  }
+  .btn {
+    @apply bg-primary text-white text-sm font-semibold px-5 py-3 rounded-lg;
+  }
+  .welcome-content {
+    @apply grid grid-cols-1 items-center md:gap-3 lg:gap-6 md:grid-cols-2 lg:px-40;
+  }
+
+  .foodIcon {
+    @apply p-1 rounded-full border-2 border-transparent cursor-pointer transition-all duration-300;
+  }
+
+  .foodIcon-border {
+    @apply flex h-14 w-14 items-center justify-center rounded-full bg-white;
+  }
+
+  .foodIcon.active {
+    @apply border-yellow-400;
+  }
+}
