@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is Single Page" />
+    <title>GET PIZZA - MENU</title>
+    <link rel="icon" href="../IMG/favicon.ico" />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <header class="relative py-6 shadow-md w-full z-50 bg-white">
+      <div class="container">
+        <!-- wrapper -->
+        <div class="flex items-center justify-between">
+          <!-- logo -->
+          <div>
+            <img
+              class="w-28"
+              src="../IMG/LOGO.webp"
+              alt="This image is represented as the website's logo"
+            />
+          </div>
+          <!-- nav -->
+          <nav class="headerNav">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="menu.html">MENU</a></li>
+              <li><a href="contact.html">CONTACTS</a></li>
+            </ul>
+          </nav>
+          <!-- toggle menu -->
+          <div class="toggleMenu" id="toggleBtn">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header wrapper -->
+    <section class="header_wrapper">
+      <div class="container">
+        <!-- text -->
+        <div class="flex items-center justify-center gap-1 text-center">
+          <svg
+            class="w-4 shrink-0 mb-4 decoration-primary md:mb-1 lg:mb-1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+            <path
+              fill="rgb(178, 42, 42)"
+              d="M461.2 18.9C472.7 24 480 35.4 480 48l0 416c0 12.6-7.3 24-18.8 29.1s-24.8 3.2-34.3-5.1l-46.6-40.7c-43.6-38.1-98.7-60.3-156.4-63l0 95.7c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-96C57.3 384 0 326.7 0 256S57.3 128 128 128l84.5 0c61.8-.2 121.4-22.7 167.9-63.3l46.6-40.7c9.4-8.3 22.9-10.2 34.3-5.1zM224 320l0 .2c70.3 2.7 137.8 28.5 192 73.4l0-275.3c-54.2 44.9-121.7 70.7-192 73.4L224 320z"
+            />
+          </svg>
+          <h3 class="text-primary text-xs font-semibold">
+            This website provides information about our store. Online
+            transactions are coming soon.
+          </h3>
+        </div>
+      </div>
+    </section>
+    <!-- menu banner -->
+    <section class="relative overflow-hidden">
+      <!-- image -->
+      <div class="h-140 w-full md:h-96 lg:h-168">
+        <img
+          class="h-full w-full scale-128 object-cover object-left md:scale-100 md:object-center"
+          src="../IMG/menubanner.webp"
+          alt="Menu Banner"
+        />
+      </div>
+
+      <!-- overlay -->
+      <div class="absolute top-0 left-0 h-full w-full bg-black/60"></div>
+
+      <!-- content -->
+      <div
+        class="absolute top-0 left-0 flex h-full w-full items-center justify-start px-8 text-left md:justify-center md:px-5 md:text-center"
+      >
+        <h2
+          class="mb-10 max-w-xs text-4xl font-extrabold uppercase leading-none text-white md:mb-28 md:max-w-3xl"
+        >
+          ALWAYS FRESH & READY <br />
+          TO BE SERVED.
+        </h2>
+      </div>
+    </section>
+    <!-- menu list -->
+    <section class="bg-blue-900 py-16">
+      <div class="container">
+        <!-- menu tabs -->
+        <div
+          class="mx-auto mb-8 flex w-full max-w-xl items-center justify-center rounded-3xl bg-yellow-500 px-4 py-5 shadow-md"
+        >
+          <ul
+            class="flex w-full items-center justify-between font-semibold uppercase"
+          >
+            <li class="border-r border-white/80 px-4 text-primary">Pizza</li>
+            <li class="border-r border-white/80 px-4 text-blue-900">Burger</li>
+            <li class="border-r border-white/80 px-4 text-blue-900">Chicken</li>
+            <li class="border-r border-white/80 px-4 text-blue-900">Drinks</li>
+            <li class="px-4 text-blue-900">Cake</li>
+          </ul>
+        </div>
+
+        <!-- cards -->
+        <div
+          class="grid grid-cols-3 gap-3 md:mx-auto md:max-w-3xl md:gap-4 lg:max-w-4xl"
+        >
+          <!-- card 1 -->
+          <div
+            class="px-4 py-8 text-center md:rounded-lg md:border lg:rounded-lg lg:border border-white/80"
+          >
+            <div
+              class="mx-auto mb-6 flex h-28 w-28 items-center justify-center"
+            >
+              <img class="w-30" src="../IMG/prosciutto.webp" />
+            </div>
+
+            <h4 class="font-bold text-white">BBQ PIZZA</h4>
+            <p class="font-semibold text-white">$25.00</p>
+            <p class="mb-4 text-yellow-400">★★★★★</p>
+
+            <button
+              class="rounded-md border border-red-500 px-3 py-1 font-semibold text-white md:px-5 md:py-2"
+            >
+              Read more
+            </button>
+          </div>
+
+          <!-- card 2 -->
+          <div
+            class="px-4 py-8 text-center md:rounded-lg md:border lg:rounded-lg lg:border border-white/80"
+          >
+            <div
+              class="mx-auto mb-6 flex h-28 w-28 items-center justify-center"
+            >
+              <img class="w-30" src="../IMG/prosciutto.webp" />
+            </div>
+
+            <h4 class="font-bold text-white">BBQ PIZZA</h4>
+            <p class="font-semibold text-white">$25.00</p>
+            <p class="mb-4 text-yellow-400">★★★★★</p>
+
+            <button
+              class="rounded-md border border-red-500 px-3 py-1 font-semibold text-white md:px-5 md:py-2"
+            >
+              Read more
+            </button>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="px-4 py-8 text-center md:rounded-lg md:border lg:rounded-lg lg:border border-white/80"
+          >
+            <div
+              class="mx-auto mb-6 flex h-28 w-28 items-center justify-center"
+            >
+              <img class="w-30" src="../IMG/prosciutto.webp" />
+            </div>
+
+            <h4 class="font-bold text-white">BBQ PIZZA</h4>
+            <p class="font-semibold text-white">$25.00</p>
+            <p class="mb-4 text-yellow-400">★★★★★</p>
+
+            <button
+              class="rounded-md border border-red-500 px-3 py-1 font-semibold text-white md:px-5 md:py-2"
+            >
+              Read more
+            </button>
+          </div>
+          <!-- card 4 -->
+          <div
+            class="px-4 py-8 text-center md:rounded-lg md:border lg:rounded-lg lg:border border-white/80"
+          >
+            <div
+              class="mx-auto mb-6 flex h-28 w-28 items-center justify-center"
+            >
+              <img class="w-30" src="../IMG/prosciutto.webp" />
+            </div>
+
+            <h4 class="font-bold text-white">BBQ PIZZA</h4>
+            <p class="font-semibold text-white">$25.00</p>
+            <p class="mb-4 text-yellow-400">★★★★★</p>
+
+            <button
+              class="rounded-md border border-red-500 px-3 py-1 font-semibold text-white md:px-5 md:py-2"
+            >
+              Read more
+            </button>
+          </div>
+          <!-- card 5 -->
+          <div
+            class="px-4 py-8 text-center md:rounded-lg md:border lg:rounded-lg lg:border border-white/80"
+          >
+            <div
+              class="mx-auto mb-6 flex h-28 w-28 items-center justify-center"
+            >
+              <img class="w-30" src="../IMG/prosciutto.webp" />
+            </div>
+
+            <h4 class="font-bold text-white">BBQ PIZZA</h4>
+            <p class="font-semibold text-white">$25.00</p>
+            <p class="mb-4 text-yellow-400">★★★★★</p>
+
+            <button
+              class="rounded-md border border-red-500 px-3 py-1 font-semibold text-white md:px-5 md:py-2"
+            >
+              Read more
+            </button>
+          </div>
+          <!-- card 6 -->
+          <div
+            class="px-4 py-8 text-center md:rounded-lg md:border lg:rounded-lg lg:border border-white/80"
+          >
+            <div
+              class="mx-auto mb-6 flex h-28 w-28 items-center justify-center"
+            >
+              <img class="w-30" src="../IMG/prosciutto.webp" />
+            </div>
+
+            <h4 class="font-bold text-white">BBQ PIZZA</h4>
+            <p class="font-semibold text-white">$25.00</p>
+            <p class="mb-4 text-yellow-400">★★★★★</p>
+
+            <button
+              class="rounded-md border border-red-500 px-3 py-1 font-semibold text-white md:px-5 md:py-2"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- connect -->
+    <section class="bg-primary p-9 md:pb-0 lg:pb-0">
+      <div class="container">
+        <div class="flex items-center justify-center gap-8 lg:gap-12">
+          <!-- chef image -->
+          <div>
+            <img
+              class="hidden md:block w-52 md:w-64 lg:w-72 object-contain"
+              src="../IMG/chef.webp"
+              alt="Chef pointing"
+            />
+          </div>
+
+          <!-- connect content -->
+          <div class="w-full max-w-md text-center lg:max-w-lg">
+            <h2 class="mb-2 font-extrabold uppercase text-white">
+              LET'S CONNECT
+            </h2>
+
+            <p class="mb-5 text-white">
+              and get a 10% off bill offers and invites
+            </p>
+
+            <!-- form -->
+            <div class="flex overflow-hidden bg-white p-3">
+              <input
+                type="email"
+                placeholder="YOUR EMAIL ADDRESS"
+                class="w-full px-4 py-3 text-gray-900 outline-none"
+              />
+
+              <button
+                class="rounded-2xl bg-yellow-400 px-5 py-3 font-semibold text-black md:px-8"
+              >
+                SUBSCRIBE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-gray-100 py-8">
+      <div class="container">
+        <!-- logo -->
+        <div class="mb-10 flex justify-center">
+          <img class="w-50" src="../IMG/LOGO.webp" alt="Get Pizza Logo" />
+        </div>
+
+        <!-- footer content -->
+        <div
+          class="mx-auto flex w-fit flex-col items-center justify-center gap-8 text-center md:flex-row md:items-start md:gap-16 lg:gap-24"
+        >
+          <!-- address -->
+          <div>
+            <h5 class="mb-2 font-semibold uppercase text-black">ADDRESS</h5>
+            <p class="text-black">570 8th Ave, New York, NY</p>
+            <p class="text-black">10018 United States</p>
+          </div>
+
+          <!-- book -->
+          <div>
+            <h5 class="mb-2 font-semibold uppercase text-black">
+              BOOK A TABLE
+            </h5>
+            <p class="text-black">Dogfood Och Sliders Foodtruck.</p>
+            <p class="text-black">Under Om Oss Kan Ni Läsa</p>
+          </div>
+
+          <!-- opening -->
+          <div>
+            <h5 class="mb-2 font-semibold uppercase text-black">
+              OPENING HOURS
+            </h5>
+            <p class="text-black">Monday – Friday</p>
+            <p class="text-black">10.00 AM – 11.00 PM</p>
+          </div>
+        </div>
+
+        <!-- number -->
+        <div class="mt-8 text-center">
+          <p class="text-primary">0123456987</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="../js/toggle-menu.js"></script>
+</html>
